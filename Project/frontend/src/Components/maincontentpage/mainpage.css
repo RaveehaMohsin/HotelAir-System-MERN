@@ -1,0 +1,94 @@
+/* Mainpage container */
+.main-content {
+    display: flex;
+    margin-left: 0; /* Adjust margin to 0 by default */
+    margin-top: 3.7%;
+   
+}
+
+/* When the sidebar is open */
+.main-content.with-sidebar {
+    margin-left: 280px; /* Space for the sidebar */
+}
+
+/* Content area */
+.content-area {
+    flex-grow: 1;
+    background: linear-gradient(to bottom, #444444, #1b1e22); 
+    height: auto;
+    position: relative; /* Positioning context for content */
+}
+
+
+.custom-header {
+    display: flex;
+    align-items: center;
+    background-color: rgb(20, 20, 20); /* Black background for the header */
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.back-button {
+    background-color: #d63384; /* Pink-Purplish color */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.back-button .fa-arrow-left {
+    margin-right: 8px;
+}
+
+.hotel-logo {
+    height: 40px; /* Adjust according to your needs */
+    margin-right: 15px;
+    
+}
+
+.hotel-title {
+    font-weight: bold;
+    flex-grow: 1; 
+    font-size: 1.3rem;
+    background: linear-gradient(45deg, purple, rgb(241, 123, 143)); /* Gradient colors */
+    -webkit-background-clip: text; /* Clip the background to the text */
+    -webkit-text-fill-color: transparent; /* Make the text color transparent so the gradient shows */
+    color: transparent; /* Fallback color */
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+}
+
+.user-info .fa-user-circle {
+    margin-right: 10px;
+}
+
+.user-info .user-name{
+    background: linear-gradient(45deg, purple, rgb(241, 123, 143)); /* Gradient colors */
+    -webkit-background-clip: text; /* Clip the background to the text */
+    -webkit-text-fill-color: transparent; /* Make the text color transparent so the gradient shows */
+    color: transparent; /* Fallback color */
+}
+
+.img-user{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 2px solid #ff79c6; /* Border around profile image */
+}
+
+@media (max-width: 768px) {
+    .custom-header{
+      margin-top: 5%;
+    }
+}
+

@@ -1,0 +1,129 @@
+/* Container for all room cards */
+.rooms-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+    gap: 30px; /* Space between the room cards */
+}
+
+/* Individual room card styling */
+.room-card {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1000px; /* Set a max-width for the card */
+    border-radius: 15px;
+    background: linear-gradient(145deg, #859398, #283048);
+    color: #ECF0F1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+   
+}
+
+.room-card.sidebar-open {
+    max-width: 1050px;
+  }
+  
+  .room-card.sidebar-closed {
+    max-width: 1250px;
+  }
+
+.room-card:hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.7);
+}
+
+/* Image container */
+.room-image-container {
+    width: 40%; /* Image takes up 40% of the card */
+    overflow: hidden;
+}
+
+.room-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire container */
+    transition: transform 0.5s ease;
+}
+
+.room-card:hover .room-image {
+    transform: scale(1.1); /* Zoom in on hover */
+}
+
+/* Room content styling */
+.room-content {
+    width: 60%; /* Content takes up 60% of the card */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+
+}
+
+.room-title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #f0f6fc;
+  
+}
+
+.room-description {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #c5c6c7;
+}
+
+.room-details {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  
+}
+
+.room-icon {
+    margin-right: 8px; 
+    
+}
+
+/* Button styling */
+.btn-book {
+    padding: 12px 25px;
+    background-color: #e55144;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-start; /* Align button to the start */
+    margin: auto;
+}
+
+.btn-book:hover {
+    background-color: #ec9c3a; /* Change color on hover */
+}
+
+@media (max-width: 768px) {
+    .room-card {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .room-image-container {
+        width: 100%;
+        height: 250px; /* Adjust height for smaller screens */
+    }
+
+    .room-content {
+        width: 100%;
+        padding: 15px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .btn-book {
+        align-self: center; /* Center button on smaller screens */
+    }
+}

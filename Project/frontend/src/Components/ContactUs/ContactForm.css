@@ -1,0 +1,92 @@
+.contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #2b2b2b, #1a1a1a);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 500px;
+  }
+  
+  .contact-form-container h3 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .form-group11 {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .form-group11 .icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #8a2be2;
+    font-size: 20px;
+  }
+  
+  .form-group11 input,
+  .form-group11 textarea {
+    width: 100%;
+    padding: 10px 10px 10px 40px; /* Add space for the icon */
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-group11 input:focus,
+  .form-group11 textarea:focus {
+    background-color: #444;
+    outline: none;
+  }
+  
+  .form-group11 textarea {
+    height: 150px;
+    resize: none;
+  }
+  
+  .submit1-btn {
+    background-color: #ff69b4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .submit1-btn:hover {
+    background-color: #ff1493;
+    transform: scale(1.05);
+  }
+  
+  .submit1-icon {
+    font-size: 18px;
+  }
+
+  /* Existing styles */
+
+.success-message {
+    color: #28a745; /* Green */
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .error-message {
+    color: #dc3545; /* Red */
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  

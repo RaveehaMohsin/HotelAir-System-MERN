@@ -1,0 +1,116 @@
+.employeesdiv {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2%;
+}
+
+.mcard {
+    background: linear-gradient(135deg, #1C1C1C, #2E4053);
+    color: #ECF0F1;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+}
+
+.mcard.sidebar-open {
+    width: 45%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.mcard.sidebar-closed {
+    width: 45%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+@media (max-width: 1300px) {
+    .mcard.sidebar-open {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1220px) {
+    .mcard.sidebar-closed {
+        width: 100%;
+    }
+}
+
+.mcard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.8);
+}
+
+.employee-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.employee-img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 4px solid #3498DB;
+}
+
+.card-title {
+    font-size: 1.8rem;
+    background: linear-gradient(45deg, #3498DB, #2E4053);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #BDC3C7;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.card-icon {
+    margin-right: 10px;
+    color: #3498DB;
+    font-size: 1.2rem;
+}
+
+.card-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.btn-update {
+    background-color: #2980B9;
+}
+
+.btn-delete {
+    background-color: #E74C3C;
+}
+
+.btn:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.btn-update:hover {
+    background-color: #1F618D;
+}
+
+.btn-delete:hover {
+    background-color: #C0392B;
+}

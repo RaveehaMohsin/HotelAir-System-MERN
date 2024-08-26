@@ -1,0 +1,43 @@
+.checkoutf-container {
+  background-color: #1b1b1b;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.checkoutf-header h2 {
+  text-align: center;
+  color: #e91e63;
+  margin-bottom: 20px;
+}
+
+.checkoutf-details {
+  margin-bottom: 20px;
+}
+
+.detailf-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #333;
+  border-radius: 4px;
+}
+
+.checkoutf-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #e91e63;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.checkoutf-button:hover {
+  background-color: #d81b60;
+}

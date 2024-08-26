@@ -1,0 +1,85 @@
+/* Container for the review section */
+.review-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #1e1e2f; /* Dark background for the section */
+    border-radius: 8px; /* Rounded corners for the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Darker shadow effect */
+    margin: 20px;
+    
+}
+
+/* Title of the section */
+.review-title {
+    font-size: 1.5rem;
+    color: #ffffff; /* White color for the title */
+    margin-bottom: 20px;
+}
+
+/* Container for booking cards */
+.booking-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between booking cards */
+    width: 100%;
+}
+
+/* Individual booking card */
+.booking-card {
+    background: linear-gradient(45deg, #2a2a40, #34344a); /* Linear gradient background */
+    border: 1px solid #444; /* Darker border for cards */
+    border-radius: 8px; /* Rounded corners for cards */
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow effect */
+}
+
+/* Hover effect for booking card */
+.booking-card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Deeper shadow on hover */
+}
+
+/* Header inside booking card */
+.booking-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Icon in the header */
+.booking-icon {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+/* Details inside booking card */
+.booking-details {
+    font-size: 0.9rem;
+    color: #e0e0e0; /* Light gray for text to stand out on dark background */
+}
+
+/* Review Us button */
+.review-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ff79c6; /* Matching color from your theme */
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.review-button:hover {
+    background-color: #e760a0; /* Slightly darker pink on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.review-icon {
+    margin-right: 8px;
+    font-size: 1.2rem;
+}

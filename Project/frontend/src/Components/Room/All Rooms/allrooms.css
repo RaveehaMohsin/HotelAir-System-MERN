@@ -1,0 +1,109 @@
+* {
+  color: #ffffff;
+}
+.home-text {
+  background: linear-gradient(
+    45deg,
+    purple,
+    rgb(241, 123, 143)
+  ); /* Gradient colors */
+  -webkit-background-clip: text; /* Clip the background to the text */
+  -webkit-text-fill-color: transparent; /* Make the text color transparent so the gradient shows */
+  color: transparent; /* Fallback color */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2%;
+}
+
+.header h3 {
+  font-family: poppins;
+}
+
+.header button {
+  background: linear-gradient(
+    45deg,
+    purple,
+    rgb(241, 123, 143)
+  ); /* Gradient colors */
+  -webkit-background-clip: text; /* Clip the background to the text */
+  -webkit-text-fill-color: transparent; /* Make the text color transparent so the gradient shows */
+  color: transparent; /* Fallback color */
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.header button:hover {
+  background-color: rgb(172, 204, 29); /* Background color on hover */
+  box-shadow: 0px 4px 15px rgba(0, 0, 255, 0.3),
+    0px 0px 25px rgba(255, 105, 180, 0.5), 0px 0px 35px rgba(128, 0, 128, 0.3); /* Gradient shadow effect */
+}
+
+.custom-btn {
+  background: linear-gradient(
+    45deg,
+    #6a1b29,
+    #d32f2f
+  ); /* Gradient background */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 4px 8px;
+  cursor: pointer; /* Pointer cursor */
+  transition: box-shadow 0.3s, transform 0.3s; /* Smooth transition */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-btn.edit-btn {
+  background: linear-gradient(45deg, #2196f3, #21cbf3); /* Blue gradient */
+}
+
+.custom-btn.delete-btn {
+  background: linear-gradient(45deg, #d32f2f, #e57373); /* Red gradient */
+}
+.custom-btn.approved-btn{
+  background: linear-gradient(
+    45deg,
+    #095216,
+    #39dc52
+  );
+}
+
+.icon {
+  width: 15px; /* Icon size */
+  height: 20px; /* Icon size */
+}
+
+.custom-btn:hover {
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Hover shadow */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+.refetchbtn {
+  background: linear-gradient(45deg, #397b83, #002f27); /* Cool gradient background */
+  border: none; /* Remove default border */
+  color: white; /* Text color */
+  padding: 12px 24px; /* Padding for the button */
+  border-radius: 12px; /* More rounded corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  font-size: 14px; /* Slightly larger text */
+  font-weight: 600; /* Semi-bold text */
+  text-transform: capitalize; /* Capitalized text */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background 0.3s, box-shadow 0.3s, transform 0.3s; /* Smooth transitions */
+  display: inline-block; /* Ensure button behaves as inline-block */
+  outline: none; /* Remove outline */
+}
+
+/* Hover effects */
+.refetchbtn:hover {
+  background: linear-gradient(45deg, #004d40, #00bcd4); /* Reverse gradient on hover */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}

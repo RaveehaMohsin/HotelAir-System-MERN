@@ -1,0 +1,133 @@
+.notifications-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.notification {
+    padding: 1.5rem;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    background: #333;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s forwards;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.no-notifications {
+    text-align: center;
+    color: #555;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.no-notifications img {
+    width: 200px;
+    height: 200px;
+}
+
+.no-notifications h3 {
+    margin: 0.5rem 0;
+    font-weight: 600;
+    color: #a4a2a2;
+}
+
+.no-notifications p {
+    color: #f5f4f4;
+    font-size: 1rem;
+}
+
+.accepted {
+    background: linear-gradient(135deg, #1f8822, #66bb6a);
+    border-left: 8px solid #388e3c;
+}
+
+.pending {
+    background: linear-gradient(135deg, #b8a60c, #e0d569);
+    border-left: 8px solid #fbc02d;
+}
+
+.rejected {
+    background: linear-gradient(135deg, #bb2419, #e57373);
+    border-left: 8px solid #d32f2f;
+}
+
+.checkout {
+    background: linear-gradient(135deg, #116060, #4db6ac); /* Teal gradient */
+    border-left: 8px solid #00796b; /* Darker teal for border */
+}
+
+.notification:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.icon-container {
+    font-size: 2.5rem;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.icon {
+    transition: transform 0.3s ease;
+}
+
+.icon.approved {
+    color: #4caf50;
+}
+
+.icon.pending {
+    color: #ffeb3b;
+}
+
+.icon.rejected {
+    color: #f44336;
+}
+
+
+.icon.checkout {
+    color: #009688; /* Teal shade for icon */
+}
+
+.notification-content {
+    flex: 1;
+}
+
+.notification-content h4 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.notification-content  span  {
+    margin: 0.5rem 0 0;
+    font-size: 1rem;
+    line-height: 1.4;
+     color: #c7c6c6;
+   
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
